@@ -1,4 +1,3 @@
-
 # IMDb Analytics Dashboard
 
 ## 1. Project Overview
@@ -121,6 +120,7 @@ source venv/bin/activate
 ### 2. start backend server
 uvicorn app.main:app --reload --port 8000
 
+---
 
 ## 7. Frontend Setup
 
@@ -143,13 +143,14 @@ npm run dev
 
 ### 5. Access the Frontend in the Browser
 http://localhost:5173
-
+---
 ##8. How Frontend & Backend Communicate
 	•	React frontend sends HTTP requests to FastAPI backend
 	•	Backend processes data using Pandas
 	•	JSON responses returned to frontend
 	•	Frontend renders charts and tables dynamically
   
+---
 
 ##9. Analysis Techniques Used
 
@@ -164,6 +165,7 @@ http://localhost:5173
 	•	Outlier detection using Z-score
 	•	Trend comparison across decades
 
+---
 
 ##10. Error Handling & Debugging (Detailed)
 
@@ -182,6 +184,7 @@ http://localhost:5173
 	2.	Validate API responses via browser
 	3.	Console log frontend state
 	4.	Restart services if needed
+---
 
 ##11. Performance & Optimization
 	•	Data loaded once and cached in memory
@@ -189,6 +192,7 @@ http://localhost:5173
 	•	Lightweight API responses
 	•	Client-side rendering optimizations
 	•	Log-scale plotting for large ranges
+---
 
 ##12. Academic Requirement Coverage
 
@@ -204,8 +208,8 @@ http://localhost:5173
 	•	Statistical summaries (+baseline)
 	•	Quartiles and boxplots (+5)
 	•	Outlier detection and reporting (+15)
-
-###15. Resources
+---
+##13. Resources
 	•	IMDb Dataset (Kaggle)
 	•	Pandas Documentation
 	•	FastAPI Documentation
