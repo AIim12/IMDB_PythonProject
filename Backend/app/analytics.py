@@ -49,11 +49,16 @@ def get_kpis(df: pd.DataFrame):
             "total_gross": 0,
         }
     
+    # Calculate total gross, handling both numeric and string formats
+    gross_sum = 0
+    if 'Gross' in df.columns:
+        gross_sum = int(df['Gross'].sum())
+    
     return {
         "total_movies": int(len(df)),
         "avg_rating": float(round(df['IMDB_Rating'].mean(), 2)),
         "total_votes": int(df['No_of_Votes'].sum()),
-        "total_gross": 0,
+        "total_gross": gross_sum,
     }
 
 def get_chart_data(df: pd.DataFrame):

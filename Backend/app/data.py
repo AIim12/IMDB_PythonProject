@@ -33,7 +33,12 @@ def load_and_clean_data():
     df['No_of_Votes'] = df['No_of_Votes'].astype(str).str.replace(',', '')
     df['No_of_Votes'] = pd.to_numeric(df['No_of_Votes'], errors='coerce')
 
-    # Drop rows where conversion failed
+    # Convert 'Gross' - remove commas and handle NaN/missing values
+    df['Gross'] = df['Gross'].astype(str).str.replace(',', '')
+    df['Gross'] = pd.to_numeric(df['Gross'], errors='coerce')
+    df['Gross'] = df['Gross'].fillna(0)
+
+    # Drop rows where conversion failed (but not for Gross since we filled NaN with 0)
     df.dropna(subset=['Released_Year', 'IMDB_Rating', 'No_of_Votes'], inplace=True)
 
     # Cast to integer types
