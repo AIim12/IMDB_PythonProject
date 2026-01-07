@@ -77,7 +77,7 @@ The dataset required:
 ---
 
 ## 5. Project Structure
-
+```text
 project4-python/
 ├── Backend/
 │   ├── app/
@@ -101,9 +101,10 @@ project4-python/
 │   └── vite.config.js
 │
 └── README.md
+```
 --- 
 
-##install dependencies
+## install dependencies
 pip install -r requirements.txt
 
 
@@ -144,8 +145,11 @@ npm run dev
 
 ### 5. Access the Frontend in the Browser
 http://localhost:5173
+
 ---
-##8. How Frontend & Backend Communicate
+
+
+## 8. How Frontend & Backend Communicate
 	•	React frontend sends HTTP requests to FastAPI backend
 	•	Backend processes data using Pandas
 	•	JSON responses returned to frontend
@@ -153,7 +157,7 @@ http://localhost:5173
   
 ---
 
-##9. Analysis Techniques Used
+## 9. Analysis Techniques Used
 
 ### Baseline
 	•	Mean, median, min, max
@@ -168,26 +172,26 @@ http://localhost:5173
 
 ---
 
-##10. Error Handling & Debugging (Detailed)
+## 10. Error Handling & Debugging (Detailed)
 
-###Common Backend Issues
+### Common Backend Issues
 	•	CSV path errors → fixed using absolute paths
 	•	Missing values → handled with Pandas fillna()
 	•	Type errors → explicit casting for year and rating
 
-###Common Frontend Issues
+### Common Frontend Issues
 	•	Module import errors → fixed by installing missing packages
 	•	API CORS issues → handled via FastAPI middleware
 	•	Vite build errors → fixed with dependency reinstall
 
-###Debug Strategy
+### Debug Strategy
 	1.	Check terminal logs
 	2.	Validate API responses via browser
 	3.	Console log frontend state
 	4.	Restart services if needed
 ---
 
-##11. Performance & Optimization
+## 11. Performance & Optimization
 	•	Data loaded once and cached in memory
 	•	Vectorized Pandas operations
 	•	Lightweight API responses
@@ -195,22 +199,22 @@ http://localhost:5173
 	•	Log-scale plotting for large ranges
 ---
 
-##12. Academic Requirement Coverage
+## 12. Academic Requirement Coverage
 
-###Visualization:
+### Visualization:
 	•	Matplotlib (backend analytics)
 	•	Modern web-based visualization using React (+15)
 
-###Dataset:
+### Dataset:
 	•	Messy real-world dataset (+5)
 	•	Manual cleaning and explanation (+10)
 
-###Analysis:
+### Analysis:
 	•	Statistical summaries (+baseline)
 	•	Quartiles and boxplots (+5)
 	•	Outlier detection and reporting (+15)
 ---
-##13. Resources
+## 13. Resources
 	•	IMDb Dataset (Kaggle)
 	•	Pandas Documentation
 	•	FastAPI Documentation
