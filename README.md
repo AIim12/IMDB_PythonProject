@@ -117,6 +117,7 @@ pip install -r requirements.txt
 cd Backend
 python3 -m venv venv
 source venv/bin/activate
+```
 ### 2. start backend server
 uvicorn app.main:app --reload --port 8000
 
@@ -131,7 +132,7 @@ Before running the frontend, ensure that **Node.js** and **npm** are installed.
 ```bash
 node -v
 npm -v
-
+```
 ### 2. Navigate Frontend directory
 cd Frontend
 
